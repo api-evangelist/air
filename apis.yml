@@ -1,25 +1,82 @@
 aid: air
+
 name: AIR
-description: 'AIR is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by sequoia-capital) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/6a1557357aace3d4dbe73ca3/6a70a3e27f026e4579411005_a7e3040688d8615fef689d580611dc83_Open%20Graph.jpg
+
+description: 'AIR is a technology company focused on providing secure, scalable, and intelligent cloud-based solutions for enterprise data management and analytics. Backed by Sequoia Capital, AIR leverages cutting‑edge AI and security technologies to help organizations streamline operations, ensure compliance, and unlock insights from their data assets. The company offers a suite of APIs for data ingestion, processing, storage, and visualization, targeting sectors such as finance, healthcare, and logistics. With a commitment to privacy and robust security, AIR aims to be a trusted partner for businesses seeking to modernize their data infrastructure and accelerate digital transformation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/air/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Data
+- Cloud
+- AI
+- Security
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- sequoia-capital
+
 common:
+- type: Compliance
+  url: https://trust.air.security/
+- type: LLMsTxt
+  url: llms/air-llms.txt
+- type: WellKnown
+  url: well-known/air-well-known.yml
+- type: Hosts
+  url: hosts/air-hosts.yml
+- type: Vendors
+  url: vendors/air-vendors.yml
+- type: TermsOfService
+  url: https://www.air.security/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.air.security/privacy-policy
+- type: Blog
+  url: https://www.air.security/blog
+- type: TrustCenter
+  url: security/air-trust-center.yml
+- type: DomainSecurity
+  url: security/air-domain-security.yml
 - type: Website
   url: https://www.air.security/
+
+apis: []
+
+x-backed-by:
+- sequoia-capital
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.air.security/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

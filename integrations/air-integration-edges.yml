@@ -1,0 +1,20 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://n8n.io/integrations/air/
+checked:
+- https://composio.dev/toolkits/air
+- https://monid.ai/tools/air
+- https://n8n.io/integrations/air/
+- https://zapier.com/apps/air/integrations
+summary: null
+marketplace_apps:
+- marketplace: n8n
+  channel: open-source-node
+  app: air
+  url: https://n8n.io/integrations/air/
+  identity: title
+  pair_pages: 0
+  pairs: []
+edges: []
+templates: []
